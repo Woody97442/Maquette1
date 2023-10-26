@@ -1,0 +1,73 @@
+*{
+    color: white;
+}
+
+
+body{
+    background-color: #1d1d1d;
+}
+
+/* Css de la barre de navigation */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    transform-origin: left;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link.active{
+    background-color: transparent !important;
+}
+/* ------------------------------------- */
+
+H1{
+    font-weight: 600 !important;
+    font-size: 5rem !important;
+}
+H2{
+    color: blue;
+    font-weight: 500;
+}
+
+.icon-size {
+    max-width: 120px;
+    max-height: 60px;
+}
+
+.blue-background {
+    background-color: blue;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.rounded-2{
+    border-radius: 8px !important;
+}
+
+.rounded{
+    border-radius: 7px !important;
+}
+.headerimg{
+    width: 100%;
+    height: auto;
+}
